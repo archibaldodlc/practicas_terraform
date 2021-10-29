@@ -1,0 +1,2 @@
+# Objetivo
+Estos script de Terraform levantan una VPC y todas las configuraciones necesarias para habilitar el acceso de entrada (80,443,22) y salida (Internet) de una máquina EC2 con la AMI de Amazon. Actualiza la instancia con "yum update", instala docker y ejecuta la imagen de Wordpress de docker asociándola al puerto 80 de la instancia EC2. 
