@@ -15,16 +15,6 @@ data "aws_vpc" "vpc_terraform_data"{
   }
 }
 
-/* resource "aws_vpc" "mivpcconterraform" {
-  cidr_block       = "192.0.0.0/16"
-  instance_tenancy = "default"
-
-  tags =  {
-    Name = "${local.prefijo_recursos}"
-    numero = local.prefijo_numero
-  }
-} */
-
 resource "aws_subnet" "misubnetterraform" {
   vpc_id     = data.aws_vpc.vpc_terraform_data.id
   cidr_block = "172.31.160.0/20"
