@@ -30,3 +30,4 @@ override.tf.json
 
 
 *.terraform.lock.hcl
+corriendo_docker_en_ec2/terraform.tfvars
